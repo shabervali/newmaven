@@ -29,7 +29,8 @@ pipeline
             steps
             {
                 git 'https://github.com/selenium-saikrishna/FunctionalTesting.git'
-                sh label: '',script: 'java -jar /home/ubuntu/.jenkins/workspace/declarativepipeline/testing.jar'
+	
+                
             }
         }
     }
