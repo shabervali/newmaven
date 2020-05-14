@@ -24,14 +24,7 @@ pipeline
                 sh label: '',script: 'scp /home/ubuntu/.jenkins/workspace/declarativepipeline/webapp/target/webapp.war ubuntu@172.31.14.122:/var/lib/tomcat8/webapps/testenv.war'
             }
         }
-        stage('Cont Testing')
-        {
-            steps
-            {
-                git 'https://github.com/selenium-saikrishna/FunctionalTesting.git'
-                sh label: '',script: 'java -jar /home/ubuntu/.jenkins/workspace/declarativepipeline/testing.jar'
-            }
-        }
+        
     }
     post
     {
